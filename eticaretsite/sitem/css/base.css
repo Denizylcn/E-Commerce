@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+/*!base start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*? RENKLER */
+:root {
+  --primary-color: #64b31fe9; /*? #1367ef*/
+  --second-color: #252630; /*? #dee0ea*/
+  --third-color: whitesmoke; /*? whitesmoke*/
+}
+
+.img-fluid{
+  width: 100%;
+}
+
+/*!base END */
+
+
+/*! RESPONSİVE CONTAINER START */
+@media (max-width:1200) {
+    .container{
+      max-width: 992px;
+    }
+  }
+  @media (max-width:992px) {
+    .container{
+      max-width: 768px;
+    }
+  }
+  @media (max-width:768px) {
+    .container{
+      max-width: 576px;
+    }
+  }
+  @media (max-width:576px) {
+    .container{
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width:400px) {
+    .container{
+      max-width: 350px;
+    }
+  }

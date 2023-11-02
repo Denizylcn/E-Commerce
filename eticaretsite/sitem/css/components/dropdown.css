@@ -1,0 +1,99 @@
+/*? MENU DROPDOWN START */
+
+header .menu-dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  opacity: 0;
+  visibility: hidden;
+                   
+  transition: 0.4s all;
+ 
+  
+  
+}
+.menu-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  border: 1px solid var(--second-color);
+  background-color: rgb(249, 249, 249);
+  font-size: 14px;
+  transition: color 0.4s;
+}
+.header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper {
+  opacity: 5;
+  visibility: visible;
+  z-index: 1;
+
+}
+
+
+.menu-dropdown-content a {
+  display: flex;
+  padding: 10px 30px;
+  font-size: 12px;
+  transition: color 0.4s;
+}
+.menu-dropdown-content a:hover {
+  color: #1367ef;
+}
+
+/*? MENU DROPDOWN END */
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/*? MEGA-MENU DROPDOWN -------------------------------------------------------------------------------------------------------- START */
+.menu-dropdown-megamenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid var(--second-color);
+  background-color: rgb(249, 249, 249);
+  
+}
+.megamenu-products {
+  display: flex;
+  column-gap: 60px;
+  margin-right: 15px;
+}
+.megamenu-products .megamenu-menu-list li {
+  margin: 0;
+  padding: 0 0;
+}
+.megamenu-products .megamenu-menu-list li a {
+  font-size: 15px;
+  padding: 0;
+  margin: 0 0;
+  width: 150px;
+  text-align: center;
+}
+.megamenu-products .megamenu-menu-list li a:hover {
+  color: var(--primary-color);
+}
+.megamenu-links {
+  display: flex;
+  padding: 10px;
+}
+.mega-menu {
+  position: static !important ;
+}
+.mega-menu .menu-dropdown-wrapper {
+  left: 0 !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.megamenu-product-image img {
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
+.megamenu-product-title h4 {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.megamenu-product-description p {
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+/*? MEGA-MENU DROPDOWN -----------------------------------------------------------------------------------------------------------END */

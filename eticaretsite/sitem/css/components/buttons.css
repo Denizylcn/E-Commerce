@@ -1,0 +1,104 @@
+/*? RENKLER */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+:root {
+    --primary-color: #7ca13ce9; /*? #1367ef*/
+    --second-color: #dee0ea; /*? #dee0ea*/
+    --third-color: whitesmoke; /*? whitesmoke*/
+  }
+
+
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+}
+
+button{
+
+  cursor: pointer;
+  border: none;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 40px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: .2s ease all;
+}
+
+.btn-sm{
+  line-height: 33px;
+}
+
+.btn-lg{
+  line-height: 45px;
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover{
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{
+  outline: none;
+  border: 1px solid #dee0ea;
+  padding: 8px 8px 8px 15px;
+}
+textarea{
+  overflow: auto;
+  border: 1px solid #dee0ea !important;
+  padding: 8px 8px 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus{
+  border-color: gray;
+}
+
+textarea:focus{
+  border-color: gray !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  opacity: 1;
+}
+
+
+/*! base end  */
+
+/*! header start  */
+ header {
+  align-items: center;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+}
+
+.header-center .navigation .menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+header .menu-dropdown-content a:hover {
+    margin-top: 5px;
+  }

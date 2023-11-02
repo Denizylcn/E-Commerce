@@ -1,0 +1,230 @@
+/*! MODAL SEARCH START */
+
+.modal-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  .modal-search::after {
+    content: "";
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  .modal-search-wrapper {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    padding: 30px;
+  }
+  
+  
+  
+  .modal-search .modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+  
+  .modal-search .modal-description {
+    font-size: 12px;
+    color: #7a7a7a;
+    padding-bottom: 15px;
+    margin-left: 6px;
+  }
+  
+  .modal-search .search-form {
+    margin: 5px;
+    padding: 15px 0;
+    width: 100%;
+    border-top: 1px solid #dee0ea;
+    border-bottom: 1px solid #dee0ea;
+    display: flex;
+  }
+  .modal-search .search-form input {
+    width: 100%;
+    max-height: 42px;
+    border-color: #dee0ea !important;
+  }
+  .modal-search .search-form button {
+    max-height: 42px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: 1px #dee0ea !important;
+  }
+  .modal-search .search-form button i {
+    font-size: 18px;
+    color: #7a7a7a;
+  }
+  .result-search .search-heading{
+    border:1px solid #dee0ea;
+    background-color: #f9f9f9;
+    padding: 10px 5px;
+    margin-left: 4px;
+    width: 100%;
+    
+    margin-bottom: 15px;
+  }
+  .results{
+    margin-left: 4px;
+    margin-bottom: 10px;
+  }
+  .result-search .search-heading h3{
+    font-size: 17px;
+    text-align: center;
+  }
+    .name-item-result{
+    color: black;
+    font-size: 15px;
+  }
+  .code-item-result{
+    font-weight: 100;
+  }
+  .price-item-result{
+    color: rgb(120, 33, 33);
+  }
+  
+  
+  .result-search .results{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-gap: 5px;
+   
+    
+  }
+  /* .modal-search-wrapper img {
+    max-width: 100px;
+    width: 100%;
+  } */
+  
+  .modal-search .results .item-result{
+   
+    border: 1px solid var(--second-color);
+    display: flex;
+    justify-content: start;
+      
+  }
+  .img-item-result .result-item-thumb{
+    display: flex;
+   height: 100px;
+   width: auto;
+  
+  }
+  .result-search .close-icon .bi-x-circle{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /*! MODAL SEARCH END */
+
+
+
+  /* MODAL-SEARCH RESPONSİVE  START */
+
+
+
+@media (max-width:1000px) {
+  
+.result-search .results{
+  
+  display: grid;
+  grid-template-columns: 1fr ; 
+  grid-gap: 5px;
+  
+   
+ }
+
+ .modal-search-wrapper {
+  max-width: 800px;
+  width: 50%;
+  
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  padding: 30px;
+}
+.result-search .results{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height:210px;
+}
+}
+
+
+
+
+@media (max-width:680px) {
+  
+  .result-search .results{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 1px;
+    
+     
+   }
+
+   .info-item-result h4,p,span{
+    font-size: 12px;
+   }
+   .img-item-result .result-item-thumb{
+    width: 40px;
+    height: 80px;
+   }
+
+  }
+
+
+
+  @media (max-width:400px) {
+    .modal-search-wrapper .modal-title{
+    font-size: 12px;
+   }
+
+   .modal-search-wrapper .modal-description{
+    font-size: 9px;
+   }
+   .modal-search-wrapper .search-form input{
+    height: 40px;
+    
+   }
+   .modal-search-wrapper .search-form button {
+    height: 40px;
+    
+   }
+   .modal-search-wrapper .search-form button i{
+    font-size: 14px;
+    
+   }
+
+  .result-search .results{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    
+  }
+  .info-item-result h4,p,span{
+    font-size: 9px;
+   }
+   .img-item-result .result-item-thumb{
+    display: none;
+   }
+  }
+
+   /* MODAL-SEARCH RESPONSİVE  END */

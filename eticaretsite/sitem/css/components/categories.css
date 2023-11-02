@@ -1,0 +1,24 @@
+
+
+  .categories-item{
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    /* row-gap: 5000px; */
+  }
+
+  .categories-link a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 175px;
+   
+   
+
+  }
+
+  .categories-link a .categories-thumb{
+    width: 100%;
+  }

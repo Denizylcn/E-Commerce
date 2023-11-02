@@ -1,0 +1,23 @@
+/*! GLOBAL CSS */
+
+@import url(/sitem/css/base.css);
+/*! Pages CSS */
+@import url(/sitem/css/pages/home.css);
+@import url(/sitem/css/pages/account.css);
+@import url(/sitem/css/pages/contact.css);
+@import url(/sitempages/card.css);
+
+/*! Layout CSS */
+@import url(/sitem/css/layout/header.css);
+@import url(/sitem/css/layout/footer.css);
+
+/*! Component CSS */
+
+@import url(/sitem/css/components/buttons.css);
+@import url(/sitem/css/components/modal-search.css);
+@import url(/sitem/css/components/dropdown.css);
+@import url(/sitem/css/components/slider.css);
+@import url(/sitem/css/components/categories.css);
+@import url(/sitem/css/components/features-products.css);
+@import url(/sitem/css/components/campaigns.css);
+@import url(/sitem/css/components/brands.css);
